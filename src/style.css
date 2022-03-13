@@ -1,3 +1,7 @@
+*/ {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,18 +11,13 @@ body {
     font-family: sans-serif;
 }
 
-*/ {
-    box-sizing: border-box;
-}
-
-
 .screen {
     width: 600px;
     height: 600px;
     margin-top: 10px;
-    background-image: linear-gradient(to right top, #2371e7, #d95aca, #ff6085, #ff9c3e, #dcdc2d);
+    background-image: linear-gradient(to right top, #B721FF, #21D4FD);
     border-radius: 5%;
-    box-shadow: #ff608556 5px 6px 30px;
+    box-shadow: #0c4a5850 0 30px 64px;
 }
 
 table {
@@ -43,36 +42,35 @@ th {
     height: 196px;
 }
 
-th:nth-child(1) {
+/* Borders */
+th:nth-child(1), th:nth-child(2) {
     border-right: solid rgba(27, 27, 27, 0.856) 2px;
     border-bottom: solid rgba(27, 27, 27, 0.856) 2px;
-}
-th:nth-child(2) {
-    border-right: solid rgba(27, 27, 27, 0.856) 2px;
-    border-bottom: solid rgba(27, 27, 27, 0.856) 2px;
+    border-radius: 3px;
 }
 th:nth-child(3) {
     border-bottom: solid rgba(27, 27, 27, 0.856) 2px;
+    border-radius: 3px;
 }
-
 .last-line th {
     border-bottom: none;
 }
 
+/*Win screen*/
 .success {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.74);
+    background-color: rgba(255, 255, 255, 0.842);
     color: #383838;
-    text-shadow: rgba(0, 0, 0, 0.466) 0px 5px 5px;
+    text-shadow: rgba(0, 0, 0, 0.329) 0px 2px 5px;
     align-items: center;
     justify-content: center;
     font-size: 64px;
     display: none;
 }
 
-@keyframes apparition {
+@keyframes reveal {
     from {
         opacity: 0;
     }
@@ -82,14 +80,14 @@ th:nth-child(3) {
 
 }
 
-.reaveal {
+.reveal {
     width: max-content;
     height: max-content;
     margin: auto;
-    animation: 1s apparition;
+    animation: 1s reveal;
 }
 
-.affichage {
+.show-players {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -99,28 +97,25 @@ th:nth-child(3) {
     font-size: 24px;
     font-weight: 300;
     margin: 24px 50px;
-    color: #000;
-    text-shadow: rgba(0, 0, 0, 0.384) 1px 2px 3px;
 }
 
 .inactive {
-    color: #0000003f;
-    text-shadow: none;
+    color: #00000052;
 }
 
-/*reset*/
+/*Reset*/
 .reset img {
     width: 30px;
     height: auto;
     margin-bottom: 20px;
     cursor: pointer;
+    padding: 10px;
     margin: 10px;
 }
 .reset img:hover {
-    margin: 0;
     background-color: #fff;
     border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.459) 0px 0px 20px;
+    box-shadow: rgba(0, 0, 0, 0.034) 0px 16px 32px;
     padding: 10px;
 }
 
@@ -129,5 +124,5 @@ th:nth-child(3) {
     background-color: #fff;
     border-radius: 50%;
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.432) 0px 0px 20px;
+    box-shadow: rgba(0, 0, 0, 0.034) 0px 16px 32px;
 }
