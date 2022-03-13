@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e7e7;
+    font-family: sans-serif;
+}
+
+*/ {
+    box-sizing: border-box;
+}
+
+
+.screen {
+    width: 600px;
+    height: 600px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right top, #2371e7, #d95aca, #ff6085, #ff9c3e, #dcdc2d);
+    border-radius: 5%;
+    box-shadow: #ff608556 5px 6px 30px;
+}
+
+table {
+    width: 600px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+tr {
+    margin: 0;
+    padding: 0;
+}
+
+th {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-size: 45px;
+    font-weight: 400;
+    width: 200px;
+    height: 196px;
+}
+
+th:nth-child(1) {
+    border-right: solid rgba(27, 27, 27, 0.856) 2px;
+    border-bottom: solid rgba(27, 27, 27, 0.856) 2px;
+}
+th:nth-child(2) {
+    border-right: solid rgba(27, 27, 27, 0.856) 2px;
+    border-bottom: solid rgba(27, 27, 27, 0.856) 2px;
+}
+th:nth-child(3) {
+    border-bottom: solid rgba(27, 27, 27, 0.856) 2px;
+}
+
+.last-line th {
+    border-bottom: none;
+}
+
+.success {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.74);
+    color: #383838;
+    text-shadow: rgba(0, 0, 0, 0.466) 0px 5px 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    display: none;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
+.reaveal {
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    animation: 1s apparition;
+}
+
+.affichage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.players {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 24px 50px;
+    color: #000;
+    text-shadow: rgba(0, 0, 0, 0.384) 1px 2px 3px;
+}
+
+.inactive {
+    color: #0000003f;
+    text-shadow: none;
+}
+
+/*reset*/
+.reset img {
+    width: 30px;
+    height: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+.reset img:hover {
+    margin: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.459) 0px 0px 20px;
+    padding: 10px;
+}
+
+.end-game-reset {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.432) 0px 0px 20px;
+}
